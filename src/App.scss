@@ -1,0 +1,63 @@
+@import 'partial';
+
+$standardMargin:15px 0px;
+
+@mixin todoButton {
+    @include Button;
+    padding: 10px 10px;
+    width: 120px;
+    color: #292727;
+}
+.app{
+    @include rowFlex;
+    flex-direction: column;
+    height: 100%;
+    padding: $standardMargin;
+    text-align: center;
+    // background-color: rgba(244, 127, 127, 0.5);
+}
+
+.taskDiv{
+    @include rowFlex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.task{
+    @include taskDesign;
+}
+
+.task__delete{    
+    @include todoButton;
+    background-color:#8E9AE9;
+}
+
+.task__update{
+    @include todoButton;
+    background-color:$updateButtonColor;
+}
+
+.task__priority{
+    width: 130px;
+    color:white;
+}
+
+.task__type{
+    width: 130px;
+    color:white;
+}
+
+.task__info{
+    flex-grow: 2;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 30px;
+    min-width: 636px;
+    color: whitesmoke;
+}
+
+.task__checkbox{
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px;
+}

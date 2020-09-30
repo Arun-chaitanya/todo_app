@@ -1,0 +1,22 @@
+@import 'partial';
+
+.todoListItem__form{
+    @include rowFlex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.todoListItem__formInput{
+    @include inputs;
+    width: 300px;
+}
+
+.todoListItem__formSelect{
+    @include inputs;
+    width: 180px;
+}
+
+.todoListItem__formSubmit{
+    @include Button;
+    background-color:#8E9AE9;
+}

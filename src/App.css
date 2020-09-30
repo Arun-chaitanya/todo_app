@@ -1,38 +1,128 @@
-.App {
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+  padding: 15px 0px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+}
+
+.task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 90%;
+  background-color: rgba(199, 0, 57, 0.8);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.task__delete {
+  border: none;
+  color: black;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width: 160px;
+  border-radius: 4px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  width: 120px;
+  color: #292727;
+  background-color: #8E9AE9;
+}
+
+.task__update {
+  border: none;
+  color: black;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width: 160px;
+  border-radius: 4px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  width: 120px;
+  color: #292727;
+  background-color: #0db824;
+}
+
+.task__priority {
+  width: 130px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task__type {
+  width: 130px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task__info {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 30px;
+  min-width: 636px;
+  color: whitesmoke;
 }
+
+.task__checkbox {
+  height: 30px;
+  width: 30px;
+  margin: 0px 10px;
+}
+/*# sourceMappingURL=App.css.map */

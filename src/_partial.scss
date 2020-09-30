@@ -1,0 +1,50 @@
+$updateButtonColor :#0db824;
+
+@mixin inputs {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color:#443F3F;
+    font-weight: 600;
+    background-color: rgb(180, 230, 228);
+    border-width: 2px;
+    border-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+@mixin Button {
+    border: none;
+    color: black;
+    padding: 12px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 2px;
+    cursor: pointer;
+    width: 160px;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+@mixin rowFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin taskDesign{
+    @include rowFlex;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 90%;
+    background-color: rgba($color: #C70039, $alpha: 0.8);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,39 @@
+@import 'partial';
+
+@mixin buttonInFilter{
+    @include Button;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+}
+
+.button1{    
+    @include buttonInFilter;
+    background-color: #4CAF50;
+}
+
+.button2{
+    @include buttonInFilter;
+    background-color: #008CBA;
+}
+
+.button3{
+    @include buttonInFilter;
+    background-color: #f44336;
+}
+
+.button4{
+    @include buttonInFilter;
+    background-color: #AE4BD3; 
+}
+
+.button5{
+    @include buttonInFilter;
+    background-color: #555555;
+}
+
+.filter{
+    padding: 30px 0px 10px 0px;
+}

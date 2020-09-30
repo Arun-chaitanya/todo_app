@@ -1,0 +1,95 @@
+.updateTodoListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 90%;
+  background-color: rgba(199, 0, 57, 0.8);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.updateTodoListItem__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.updateTodoListItem__formInput {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  color: #443F3F;
+  font-weight: 600;
+  background-color: #b4e6e4;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.5);
+  width: 600px;
+}
+
+.updateTodoListItem__formSelect {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  color: #443F3F;
+  font-weight: 600;
+  background-color: #b4e6e4;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.5);
+  width: 180px;
+}
+
+.updateTodoListItem__formSubmit {
+  border: none;
+  color: black;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width: 160px;
+  border-radius: 4px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  background-color: #0db824;
+  width: 180px;
+  color: #292727;
+}
+/*# sourceMappingURL=UpdateTodoItem.css.map */
