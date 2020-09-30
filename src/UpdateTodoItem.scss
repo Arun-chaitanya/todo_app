@@ -1,0 +1,28 @@
+@import 'partial';
+
+.updateTodoListItem{
+    @include taskDesign;
+}
+
+.updateTodoListItem__form{
+    @include rowFlex;
+    width: 100%;
+}
+
+.updateTodoListItem__formInput{
+    @include inputs;
+    width: 600px;
+}
+
+.updateTodoListItem__formSelect{
+    @include inputs;
+    width: 180px;
+}
+
+.updateTodoListItem__formSubmit{
+    @include Button;
+    padding: 10px 10px;
+    background-color:$updateButtonColor;
+    width: 180px;
+    color:#292727;
+}
