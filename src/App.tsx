@@ -43,11 +43,11 @@ class App extends React.Component<any,MyState> {
   }
 
   componentDidMount() {
-    console.log(window.localStorage.getItem('todolist'))
-    if(window.localStorage.getItem('todolist')!== null){
+    console.log(window.localStorage.getItem('todosList'))
+    if(window.localStorage.getItem('todosList')!== null){
       console.log('hi')
-      const todosList = JSON.parse(localStorage.getItem('todolist') || '{}');
-      this.setState({todos:{...todosList}});
+      const todosList = JSON.parse(window.localStorage.getItem('todosList') || '[]');
+      this.setState({todos:[...todosList]});
     }
   }
   
@@ -81,6 +81,10 @@ class App extends React.Component<any,MyState> {
     const {toBeUpdatedTodo} = this.state;
     this.setState({ toBeUpdatedTodo:{...toBeUpdatedTodo,priority : event.target.value }});
   }
+
+  updateLocalStorage = ():void =>{
+    window.localStorage.setItem('todosList', JSON.stringify(this.state.todos));
+  }
  
   submit = (event: React.FormEvent<HTMLButtonElement>): void => {
     event.preventDefault();
@@ -94,8 +98,7 @@ class App extends React.Component<any,MyState> {
           complete: false
         },
         select:'None'
-      })
-    window.localStorage.setItem('todosList', JSON.stringify(this.state.todos));
+      },this.updateLocalStorage)
   }
 
   filterNone = (event: React.MouseEvent<HTMLButtonElement>): void => {
@@ -121,8 +124,7 @@ class App extends React.Component<any,MyState> {
   removeTodo(todo:Todo){
     this.setState({
         todos: this.state.todos.filter(el => el !== todo)
-    })
-    window.localStorage.setItem('todosList', JSON.stringify(this.state.todos));
+    },this.updateLocalStorage)
   }
 
   toggleCheck = (selectedTodo: Todo) => {
@@ -135,8 +137,7 @@ class App extends React.Component<any,MyState> {
       }
       return todo;
     })
-    this.setState({todos:newTodos})
-    window.localStorage.setItem('todosList', JSON.stringify(newTodos));
+    this.setState({todos:newTodos},this.updateLocalStorage)
   }
 
   openInput = (selectedTodo: Todo):void => {
@@ -169,8 +170,7 @@ class App extends React.Component<any,MyState> {
         complete: false
       },
       isUpdate:false
-    })
-    window.localStorage.setItem('todosList', JSON.stringify(newTodos));
+    },this.updateLocalStorage)
   }
 
   render() {
